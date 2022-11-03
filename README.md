@@ -1,5 +1,5 @@
 # Shopping Cart: an e-commerce shopping cart demo
-An ecommerce app with a functional shopping cart, built using React and CSS.
+An ecommerce app with a functional shopping cart, built using React, TypeScript and CSS.
 ## [Live Link 👈]()
 
 ### Features
@@ -8,7 +8,8 @@ An ecommerce app with a functional shopping cart, built using React and CSS.
 ![](screencap.PNG)
 
 ### Goals
-- Practice implementation of react routers for multi page applications in React
+- Showcasing routing with react-routers through creation of a multi page application in React
+- Practice implementing TypeScript
 
 ### Challenges Faced
 - 
@@ -25,7 +26,9 @@ OR
 4.	Go to  http://localhost:8080/ in your browser, and start the app!
 
 ## How to use the app
-1. 
+1. Navigate to the store page
+2. Add products to your cart!
+3. ...and thats it! This app is just a demo to showcase routing with React (no backend implemented).
 
 ## Future Features
 - 
