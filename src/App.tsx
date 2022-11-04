@@ -1,4 +1,5 @@
 import './styles/style.css';
+import {Link} from 'react-router-dom'
 
 function App() {
   return (
@@ -6,12 +7,13 @@ function App() {
 
       <div id='header'>
         <div id='header_one'>
-          <div id='logo'>A Real Shop</div>
+          <Link id='logo' to='/'>A Real Shop</Link>
         </div>
         <div id='header_two'>
-          <div id='home'>Home</div>
-          <div id='shop'>Shop</div>
-          <div id='about'>About</div>
+
+          <Link id='home' to='/'>Home</Link>
+          <Link id='shop' to='/shop'>Shop</Link>
+          <Link id='about' to='/about'>About</Link>
           <span id='cart' className="material-symbols-outlined">shopping_cart</span>
         </div>
       </div>
