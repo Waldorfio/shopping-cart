@@ -1,5 +1,5 @@
 import './styles/style.css';
-import {Link} from 'react-router-dom'
+import {Link, Outlet} from 'react-router-dom'
 
 function App() {
   return (
@@ -18,9 +18,7 @@ function App() {
         </div>
       </div>
 
-      <div id='content'>
-        Content
-      </div>
+      <Outlet />
 
       <div id="footer">
           <span id='footer-title'>Copyright © 2022 Waldorfio&nbsp;&nbsp;&nbsp;
