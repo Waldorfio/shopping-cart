@@ -23,7 +23,7 @@ const Shop = () => {
 
         <div className='product'>
           <img className='product-img' src='https://i.redd.it/1mu3vxj97sm81.jpg'></img>
-          <div className='product-title'>Dark Souls 2: Scholars of the first sin - PC</div>
+          <div className='product-title'>Dark Souls 2 (DLC) - PC</div>
           <div className='product-price'>AU$22.19</div>
           <div className='product-discount'>AU$58.49</div>
           <span className="material-symbols-outlined">add_shopping_cart</span>
