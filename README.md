@@ -1,5 +1,5 @@
 # Shopping Cart: an e-commerce shopping cart demo
-An ecommerce app with a functional shopping cart, built using React, TypeScript and CSS.
+A fully responsive e-commerce game key shop, built using React, TypeScript and CSS.
 ## [Live Link 👈]()
 
 ### Features
