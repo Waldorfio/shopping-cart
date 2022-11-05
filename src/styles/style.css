@@ -143,6 +143,27 @@ a:-webkit-any-link {    /* Removes default styling for links, and React Links */
     color: #0ebf83;
 }
 
+/* ABOUT */
+#about-content {
+    display: grid;
+    grid-template-rows: 0.4fr 1fr;
+    gap: 30px;
+    background-color: #1f143d;
+    color: white;
+    padding: 30px;
+}
+#about-links {
+    align-self: end;
+    justify-self: center;
+}
+#contact-info {
+    font-weight: 800;
+    font-size: 2em;
+    align-self: start;
+    justify-self: center;
+    text-align: center;
+}
+
 /* FOOTER */
 #footer {
     display: grid;

@@ -2,9 +2,15 @@ import {Link} from 'react-router-dom'
 
 const About = () => {
     return (
-      <div>
-        <h1>About Page!</h1>
-        <Link to='/'>Return Home</Link>
+      <div id='about-content'>
+        <div id='about-links'>
+          <span className="material-symbols-outlined">add_shopping_cart</span>
+          <span className="material-symbols-outlined">add_shopping_cart</span>
+          <span className="material-symbols-outlined">add_shopping_cart</span>
+          <span className="material-symbols-outlined">add_shopping_cart</span>
+          <span className="material-symbols-outlined">add_shopping_cart</span>
+        </div>
+        <div id='contact-info'>Another Key Shop<br></br>Address not provided lol</div>
       </div>
     );
   };
