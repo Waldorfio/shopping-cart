@@ -56,8 +56,25 @@ a:-webkit-any-link {    /* Removes default styling for links, and React Links */
     align-self: center;
     justify-self: center;
 }
+#cart-container {
+    display: grid;
+    grid-template-columns: 1fr 35px;
+}
 #cart {
     font-size: 3em;
+    justify-self: end;
+}
+#cart-size {
+    border: 3px solid #0ebf83;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    align-self: start;
+    justify-self: center;
+    padding: 2px;
+    text-align: center;
+    font-size: 1.1em;
+    font-weight: 900;
 }
 #cart:hover {
     font-size: 4em;
