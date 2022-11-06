@@ -1,14 +1,22 @@
-const Products = (props: object) => {
-    // State Declarations
+import { stringify } from "querystring";
 
-    // State Handlers
-    const img = props.game;
+interface Props {
+  title: string,
+  price: string,
+  discount: string,
+  img: string,
+}
+
+const Products = (props: Props) => {
+
+    const { title, price, discount, img } = props;
+
     return (
       <div className='product'>
-        <img className='product-img' src={img}></img>
-        <div className='product-title'>Elden Ring DELUXE EDITION - PC</div>
-        <div className='product-price'>AU$73.09</div>
-        <div className='product-discount'>AU$97.49</div>
+        <img className='product-img' src={require('../img/elden.jpg')}></img>
+        <div className='product-title'>{title}</div>
+        <div className='product-price'>{price}</div>
+        <div className='product-discount'>{discount}</div>
         <span className="material-symbols-outlined">add_shopping_cart</span>
       </div>
     );
