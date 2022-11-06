@@ -4,6 +4,7 @@ import Products from './components/Products'
 
 const Shop = () => {
     // State Declarations
+    const [cart, setCart] = useState(0)
     const [games, setGames] = useState(
       [
         {title: 'Elden Ring: Deluxe Edition - PC', price: 'AU$73.09', discount: '$97.49', img: 'elden.jpg'},
@@ -15,6 +16,12 @@ const Shop = () => {
       ]
     )
 
+    // State Handlers
+    function addToCart() {
+      setCart(cart + 1);
+      alert('added to cart!'+cart)
+    }
+
     return (
       <div id='shop-content'>
         { games.map((idx) => (
@@ -23,6 +30,7 @@ const Shop = () => {
             price = {idx.price}
             discount = {idx.discount}
             img = {idx.img}
+            addToCart = {addToCart}
           />
         ))}
       </div>
