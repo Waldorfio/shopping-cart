@@ -69,9 +69,9 @@ a:-webkit-any-link {    /* Removes default styling for links, and React Links */
     border-radius: 50%;
     width: 20px;
     height: 20px;
-    align-self: start;
+    align-self: center;
     justify-self: center;
-    padding: 2px;
+    padding: 4px;
     text-align: center;
     font-size: 1.1em;
     font-weight: 900;
