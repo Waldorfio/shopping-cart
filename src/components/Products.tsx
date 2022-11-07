@@ -22,6 +22,7 @@ const Products = (props: Props) => {
       </div>
     );
   };
+
   
   export default Products;
   

@@ -6,6 +6,10 @@ function App() {
   // State Declarations
   const [cart, setCart] = useState(0);
 
+  function addToCart() {
+    setCart(cart + 1);
+  }
+
   return (
     <div id='container'>
 
@@ -25,7 +29,7 @@ function App() {
         </div>
       </div>
 
-      <Outlet context={[cart, setCart]}/>
+      <Outlet context={addToCart}/>
 
       <div id="footer">
           <span id='footer-title'>Copyright © 2022 Waldorfio&nbsp;&nbsp;&nbsp;
