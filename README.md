@@ -12,7 +12,7 @@ A fully responsive e-commerce game key shop, built using React, TypeScript and C
 - Practice implementing TypeScript
 
 ### Challenges Faced
-- 
+- Passing state through Outlet routes in Typescript
 
 ## How to run the app
 ### 1. Click the [hosted link]()
