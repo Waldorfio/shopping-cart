@@ -5,7 +5,7 @@ A fully responsive e-commerce game key shop, built using React, TypeScript and C
 ### Features
 - 
 
-![](screencap.PNG)
+![](screencap.png)
 
 ### Goals
 - Showcasing routing with react-routers through creation of a multi page application in React
