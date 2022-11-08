@@ -80,6 +80,39 @@ a:-webkit-any-link {    /* Removes default styling for links, and React Links */
     font-size: 4em;
     color: aqua;
 }
+
+
+/* Cart Popup */
+#cart-popup-container {
+    position: fixed;
+    right: 0px;
+    width: 400px; /* To change based on screen size */
+}
+#cart-popup {
+    height: 90px; /* To change and make 100vh once click out feature added */
+    background-color:aquamarine;
+    color: red;
+    position: relative;
+    border-radius: 7px 0 0 7px;
+    /* Animation */
+    animation-name: cartpopup;
+    animation-duration: 0.5s;
+    /* Creating a grid display for cart content */
+    display: grid;
+}
+@keyframes cartpopup {
+    from {
+        right: -80px; 
+        opacity: 0
+    }
+    to {
+        right: 0px;
+        opacity: 1
+    }
+}
+
+
+
 #home:hover, #shop:hover, #about:hover {
     font-size: 2.9em;
     color: aqua;

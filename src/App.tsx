@@ -10,6 +10,16 @@ function App() {
     setCart(cart + 1);
   }
 
+  function showCart(e: any) {
+    const cartP: any = document.getElementById('cart-popup');
+    if (cartP.style.display == 'none') { // Then show element
+      cartP.style.display = '';
+      cartP.innerHTML = 'text';
+    } else { // Hide element
+        cartP.style.display = 'none';
+    }
+  }
+
   return (
     <div id='container'>
 
@@ -23,13 +33,17 @@ function App() {
           <Link id='shop' to='/shop'>Shop</Link>
           <Link id='about' to='/about'>About</Link>
           <div id='cart-container'>
-            <span id='cart' className="material-symbols-outlined">shopping_cart</span>
+            <span onClick = {showCart} id='cart' className="material-symbols-outlined">shopping_cart</span>
             <div id='cart-size'>{cart}</div>
           </div>
         </div>
       </div>
 
       <Outlet context={addToCart}/>
+
+      <div id="cart-popup-container">
+        <div id="cart-popup"></div> 
+      </div>
 
       <div id="footer">
           <span id='footer-title'>Copyright © 2022 Waldorfio&nbsp;&nbsp;&nbsp;
