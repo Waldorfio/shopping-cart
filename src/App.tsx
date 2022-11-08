@@ -1,6 +1,6 @@
 import './styles/style.css';
 import {Link, Outlet} from 'react-router-dom'
-import React, { useState } from 'react';
+import React, { SyntheticEvent, useState } from 'react';
 
 function App() {
   // State Declarations
@@ -10,7 +10,7 @@ function App() {
     setCart(cart + 1);
   }
 
-  function showCart(e: any) {
+  function showCart(e: SyntheticEvent) {
     const cartP: any = document.getElementById('cart-popup');
     if (cartP.style.display == 'none') { // Then show element
       cartP.style.display = '';
@@ -19,10 +19,10 @@ function App() {
     }
   }
 
-  function exitCart(e: any) {
+  function exitCart(e: SyntheticEvent) {
     const cartP: any = document.getElementById('cart-popup');
     const btn: any = document.getElementById('cart');
-    if (e.target != cartP && e.target != btn) {
+    if (e.target !== cartP && e.target !== btn) {
       cartP.style.display = "none";
     }
   }
