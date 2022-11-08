@@ -35,6 +35,7 @@ OR
 3. ...and thats it! This app is just a demo to showcase routing with React (no backend implemented).
 
 ## Future Features
+- Fix forbidden non-null assertions
 - Add key management to states
 - Add a backend to allow for user login, account management, and dummy checkout
 
