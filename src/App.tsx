@@ -49,7 +49,7 @@ function App() {
       <Outlet context={addToCart}/>
 
       <div id="cart-popup-container">
-        <div id="cart-popup">
+        <div id="cart-popup" style={{display: 'none'}}>
           <div className='cart-text'>
             MY CART
             <span className='sub-cart'>{cart} ITEMS</span>
