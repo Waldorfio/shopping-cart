@@ -9,8 +9,9 @@ A fully responsive e-commerce game key shop, built using React, TypeScript and C
 ![](screencap.png)
 
 ### Goals
-- Showcasing routing with react-routers through creation of a multi page application in React
-- Practice implementing TypeScript
+- Showcasing routing with react-routers through creation of a single-page application in React
+- Practice implementing TypeScript with React
+- Further refine CSS skills
 
 ### Challenges Faced
 - Passing state through Outlet routes in Typescript
