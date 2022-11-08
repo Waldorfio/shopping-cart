@@ -14,14 +14,21 @@ function App() {
     const cartP: any = document.getElementById('cart-popup');
     if (cartP.style.display == 'none') { // Then show element
       cartP.style.display = '';
-      cartP.innerHTML = 'text';
     } else { // Hide element
         cartP.style.display = 'none';
     }
   }
 
+  function exitCart(e: any) {
+    const cartP: any = document.getElementById('cart-popup');
+    const btn: any = document.getElementById('cart');
+    if (e.target != cartP && e.target != btn) {
+      cartP.style.display = "none";
+    }
+  }
+
   return (
-    <div id='container'>
+    <div id='container' onClick={exitCart}>
 
       <div id='header'>
         <div id='header_one'>
@@ -42,7 +49,21 @@ function App() {
       <Outlet context={addToCart}/>
 
       <div id="cart-popup-container">
-        <div id="cart-popup"></div> 
+        <div id="cart-popup">
+          <div className='cart-text'>
+            MY CART
+            <span className='sub-cart'>{cart} ITEMS</span>
+            <div id='close-cart'>x</div>
+          </div>
+          <div id='cart-content'>
+            You have no items in your shopping cart.
+          </div>
+          <div id='cart-footer'>
+            <div id='subtotal' className='sub-cart'>SUBTOTAL</div>
+            <div id='total-price' className='cart-text'>AU$93.58</div>
+            <button id='checkout-btn'>CHECKOUT</button>
+          </div>
+        </div> 
       </div>
 
       <div id="footer">
