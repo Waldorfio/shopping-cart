@@ -108,22 +108,24 @@ a:-webkit-any-link {    /* Removes default styling for links, and React Links */
     font-weight: 800;
     text-align: center;
 }
-#shop-now {
+.shop-btn {
     align-self: start;
     justify-self: center;
-    grid-row: 3/4;
-    grid-column: 1/2;
     border-radius: 100px;
-    font-size: 2.5em;
     font-weight: bolder;
     background-color: #82fad2;
-    color: black;
     border: 0;
-    width: 400px;
-    height: 110px;
     display: grid;
     align-items: center;
     justify-items: center;
+}
+#shop-now {
+    grid-row: 3/4;
+    grid-column: 1/2;
+    font-size: 2.5em;
+    width: 400px;
+    height: 110px;
+    color: black;
     /* Transitions for hover effect */
     transition: transform 0.2s;
 }
@@ -230,6 +232,10 @@ a:-webkit-any-link {    /* Removes default styling for links, and React Links */
 #checkout-btn {
     grid-row: 2/3;
     grid-column: 1/3;
+    font-size: 1.7em;
+    font-weight: 600;
+    width: 300px;
+    height: 60px;
 }
 
 

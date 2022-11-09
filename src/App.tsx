@@ -89,14 +89,16 @@ function App() {
             <div id='total-price' className='cart-text'>AU${
             (cart.map((x) => (parseFloat(x.price.replace('AU$',''))))).reduce((a, b) => a + b, 0).toFixed(2)
             }</div>
-            <button id='checkout-btn'>CHECKOUT</button>
+            <button className='shop-btn' id='checkout-btn'>CHECKOUT</button>
           </div>
         </div> 
       </div>
 
       <div id="footer">
           <span id='footer-title'>Copyright © 2022 Waldorfio&nbsp;&nbsp;&nbsp;
-            <img id='git' src={require('./img/github-logo.png')} alt={'github-logo'}></img>
+            <a href='https://github.com/waldorfio'>
+              <img id='git' src={require('./img/github-logo.png')} alt={'github-logo'}></img>
+            </a>
           </span>
       </div>
 
