@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/shopping-cart/static/css/main.5eaabfc9.css",
+    "main.js": "/shopping-cart/static/js/main.bd4b6545.js",
+    "static/media/yak2.png": "/shopping-cart/static/media/yak2.328defb4730fe1b189d3.png",
+    "static/media/ds2dlc.jpg": "/shopping-cart/static/media/ds2dlc.d56793af25b14fe96be5.jpg",
+    "static/media/ds2.jpg": "/shopping-cart/static/media/ds2.3b007bb442c1dc13641f.jpg",
+    "static/media/ds3.jpg": "/shopping-cart/static/media/ds3.a29a2209d2b40059a560.jpg",
+    "static/media/steam-logo.png": "/shopping-cart/static/media/steam-logo.3354fd2fac1c72cc9cb2.png",
+    "static/media/sekiro.jpg": "/shopping-cart/static/media/sekiro.4e1c2a622eb883c189c6.jpg",
+    "static/media/elden.jpg": "/shopping-cart/static/media/elden.3e178d8744cec3a1a2e8.jpg",
+    "index.html": "/shopping-cart/index.html",
+    "main.5eaabfc9.css.map": "/shopping-cart/static/css/main.5eaabfc9.css.map",
+    "main.bd4b6545.js.map": "/shopping-cart/static/js/main.bd4b6545.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5eaabfc9.css",
+    "static/js/main.bd4b6545.js"
+  ]
+}
