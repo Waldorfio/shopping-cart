@@ -3,16 +3,20 @@ A fully responsive e-commerce game key shop, built using React, TypeScript and C
 ## [Live Link 👈]()
 
 ### Features
-- 
+- Browse through a fully responsive e-commerce shop
+- Add your favorite steam games to a stateful shopping cart
 
 ![](screencap.png)
 
 ### Goals
-- Showcasing routing with react-routers through creation of a multi page application in React
-- Practice implementing TypeScript
+- Showcasing routing with react-routers through creation of a single-page application in React
+- Practice implementing TypeScript with React
+- Further refine CSS skills
 
 ### Challenges Faced
 - Passing state through Outlet routes in Typescript
+- Managing strict types via TypeScript
+- Use and manipulate the DOM via hooks
 
 ## How to run the app
 ### 1. Click the [hosted link]()
@@ -31,6 +35,8 @@ OR
 3. ...and thats it! This app is just a demo to showcase routing with React (no backend implemented).
 
 ## Future Features
-- 
+- Fix forbidden non-null assertions
+- Add key management to states
+- Add a backend to allow for user login, account management, and dummy checkout
 
 ## Dependencies
