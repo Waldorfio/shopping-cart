@@ -19,13 +19,14 @@ const Shop = () => {
 
     return (
       <div id='shop-content'>
-        { games.map((idx) => (
+        { games.map((elem, idx) => (
           < Products 
-            title = {idx.title}
-            price = {idx.price}
-            discount = {idx.discount}
-            img = {idx.img}
+            title = {elem.title}
+            price = {elem.price}
+            discount = {elem.discount}
+            img = {elem.img}
             addToCart = {addToCart}
+            key = {idx}
           />
         ))}
       </div>

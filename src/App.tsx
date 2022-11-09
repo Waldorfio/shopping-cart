@@ -43,7 +43,7 @@ function App() {
   }
 
   // State Handler
-  function addToCart(newGame: any, newPrice: any) {
+  function addToCart(newGame: string, newPrice: string) {
     setCart((prevState) => ([...prevState, {title: newGame, price: newPrice}]))
   }
 
@@ -76,7 +76,13 @@ function App() {
             <div id='close-cart'>x</div>
           </div>
           <div id='cart-content'>
-            { cart.map((idx) => (< CartProducts title = {idx.title} price={idx.price} />))}
+            { cart.map((elem, idx) => (
+            < CartProducts 
+              title = {elem.title} 
+              price = {elem.price} 
+              key = {idx}
+              />
+            ))}
           </div>
           <div id='cart-footer'>
             <div id='subtotal' className='sub-cart'>SUBTOTAL</div>
