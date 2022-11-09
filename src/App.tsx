@@ -14,7 +14,7 @@ function App() {
   // State Declarations
   const [cart, setCart] = useState(
     [
-      {title: '', price: ''},
+      {title: '', price: '0'},
     ]
   );
 
@@ -80,7 +80,9 @@ function App() {
           </div>
           <div id='cart-footer'>
             <div id='subtotal' className='sub-cart'>SUBTOTAL</div>
-            <div id='total-price' className='cart-text'>AU${cart.length - 1}</div>
+            <div id='total-price' className='cart-text'>AU${
+            (cart.map((x) => (parseFloat(x.price.replace('AU$',''))))).reduce((a, b) => a + b, 0).toFixed(2)
+            }</div>
             <button id='checkout-btn'>CHECKOUT</button>
           </div>
         </div> 

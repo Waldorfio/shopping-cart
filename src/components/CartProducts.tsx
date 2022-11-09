@@ -9,8 +9,8 @@ interface Props {
   
       return (
         <div className='product-forcart'>
-          <div className='product-title'>{title}</div>
-          <div className='product-price'>{price}</div>
+          <div className='product-carttitle'>{title}</div>
+          <div className='product-cartprice'>{price}</div>
         </div>
       );
     };

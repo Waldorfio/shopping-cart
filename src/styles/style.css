@@ -140,7 +140,15 @@ a:-webkit-any-link {    /* Removes default styling for links, and React Links */
     color: white;
     font-weight: 900;
     font-size: 0.95em;
+    display: grid;
+    align-items: start;
 }
+.product-forcart {
+    display: grid;
+    grid-template-columns: 1fr 80px;
+    align-items: center;
+}
+
 
 
 #cart-footer {
