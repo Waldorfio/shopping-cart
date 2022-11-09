@@ -89,19 +89,16 @@ a:-webkit-any-link {    /* Removes default styling for links, and React Links */
     width: 400px; /* To change based on screen size */
 }
 #cart-popup {
-    height: 90vh; /* To change and make 100vh once click out feature added */
-    background-color: #0c0020;
-    border: 3px solid #1f143d;
+    height: 90px; /* To change and make 100vh once click out feature added */
+    background-color:aquamarine;
     color: red;
     position: relative;
+    border-radius: 7px 0 0 7px;
     /* Animation */
     animation-name: cartpopup;
     animation-duration: 0.5s;
     /* Creating a grid display for cart content */
     display: grid;
-    gap: 30px;
-    grid-template-rows: 30px 1fr 190px;
-    padding: 40px;
 }
 @keyframes cartpopup {
     from {
@@ -114,55 +111,6 @@ a:-webkit-any-link {    /* Removes default styling for links, and React Links */
     }
 }
 
-
-.cart-text {
-    align-self: center;
-    align-items: center;
-    color: white;
-    font-size: 1.2em;
-    display: grid;
-    grid-template-columns: 100px 1fr 20px;
-}
-.sub-cart {
-    color: #7b778f;
-    font-size: 0.8em;
-}
-#close-cart {
-    justify-self: center;
-    color: white;
-    font-weight: 800;
-}
-#close-cart:hover {
-    color: #7b778f;
-}
-
-#cart-content {
-    color: white;
-    font-weight: 900;
-    font-size: 0.95em;
-}
-
-
-#cart-footer {
-    display: grid;
-    grid-template-rows: 100px 100px;
-    grid-template-columns: 150px 1fr;
-    align-items: center;
-}
-#subtotal {
-    grid-column: 1/2;
-    grid-row: 1/2;
-    font-size: 1.3em;
-}
-#total-price {
-    grid-column: 2/3;
-    grid-row: 1/2;
-    font-size: 1.6em;
-}
-#checkout-btn {
-    grid-row: 2/3;
-    grid-column: 1/3;
-}
 
 
 #home:hover, #shop:hover, #about:hover {
