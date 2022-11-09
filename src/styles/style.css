@@ -82,6 +82,66 @@ a:-webkit-any-link {    /* Removes default styling for links, and React Links */
 }
 
 
+/* Home Page */
+#home-content {
+    display: grid;
+    gap: 30px;
+    grid-template-rows: 70px 200px 150px;
+    grid-template-columns: 1.2fr 1.3fr;
+    background-color: #1f143d;
+    color: white;
+    padding: 80px;
+}
+#home-text {
+    align-self: end;
+    grid-row: 1/2;
+    grid-column: 1/2;
+    font-size: 1.5em;
+    text-align: center;
+    color: #6e6d93;
+}
+#main-home-text {
+    align-self: center;
+    grid-row: 2/3;
+    grid-column: 1/2;
+    font-size: 2.8em;
+    font-weight: 800;
+    text-align: center;
+}
+#shop-now {
+    align-self: start;
+    justify-self: center;
+    grid-row: 3/4;
+    grid-column: 1/2;
+    border-radius: 100px;
+    font-size: 2.5em;
+    font-weight: bolder;
+    background-color: #82fad2;
+    color: black;
+    border: 0;
+    width: 400px;
+    height: 110px;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    /* Transitions for hover effect */
+    transition: transform 0.2s;
+}
+#shop-now:hover {
+    transform: scale(1.12);
+}
+#game-samples {
+    grid-row: 1/4;
+    grid-column: 2/3;
+    border-radius: 15px;
+    opacity: 90%;
+    width: 550px;
+    align-self: center;
+    justify-self: start;
+}
+
+
+
 /* Cart Popup */
 #cart-popup-container {
     position: fixed;
