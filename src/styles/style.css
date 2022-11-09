@@ -89,7 +89,7 @@ a:-webkit-any-link {    /* Removes default styling for links, and React Links */
     width: 400px; /* To change based on screen size */
 }
 #cart-popup {
-    height: 90vh; /* To change and make 100vh once click out feature added */
+    height: 95vh; /* To change and make 100vh once click out feature added */
     background-color: #0c0020;
     border: 3px solid #1f143d;
     color: red;

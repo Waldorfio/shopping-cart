@@ -2,9 +2,19 @@ import './styles/style.css';
 import {Link, Outlet} from 'react-router-dom'
 import React, { SyntheticEvent, useState, useRef } from 'react';
 
+interface Cart {
+  size: number;
+  games: string[];
+  prices: string[];
+}
+
 function App() {
   // State Declarations
-  const [cart, setCart] = useState(0);
+  const [cart, setCart] = useState<Cart>({
+    size: 0,
+    games: [''],
+    prices: [''],
+  });
 
   // Declaring Refs for DOM Manipulation
   const cartRef = useRef<HTMLDivElement>(null);
@@ -31,8 +41,19 @@ function App() {
   }
 
   // State Handler
-  function addToCart() {
-    setCart(cart + 1);
+  function addToCart(newGame: any, newPrice: any) {
+    setCart((prevState) => ({
+      ...prevState,
+      size: prevState.size + 1,
+      games: [
+        ...prevState.games,
+        newGame,
+      ],
+      prices: [
+        prevState.prices,
+        newPrice,
+      ],
+    }))
   }
 
   return (
@@ -49,7 +70,7 @@ function App() {
           <Link id='about' to='/about'>About</Link>
           <div id='cart-container'>
             <span onClick={showCart} ref={cartRef} id='cart' className="material-symbols-outlined">shopping_cart</span>
-            <div id='cart-size'>{cart}</div>
+            <div id='cart-size'>{cart.size}</div>
           </div>
         </div>
       </div>
@@ -60,11 +81,12 @@ function App() {
         <div ref={cartPopupRef} id="cart-popup" style={{display: 'none'}}>
           <div className='cart-text'>
             MY CART
-            <span className='sub-cart'>{cart} ITEMS</span>
+            <span className='sub-cart'>{cart.size} ITEMS</span>
             <div id='close-cart'>x</div>
           </div>
           <div id='cart-content'>
-            You have no items in your shopping cart.
+            {cart.games}
+            {cart.prices}
           </div>
           <div id='cart-footer'>
             <div id='subtotal' className='sub-cart'>SUBTOTAL</div>
