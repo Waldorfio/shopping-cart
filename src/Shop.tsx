@@ -1,5 +1,5 @@
 import { useOutletContext } from 'react-router-dom';
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import Products from './components/Products';
 
 const Shop = () => {

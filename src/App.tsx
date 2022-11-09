@@ -1,7 +1,6 @@
 import './styles/style.css';
 import {Link, Outlet} from 'react-router-dom'
 import React, { SyntheticEvent, useState, useRef } from 'react';
-import { JSDocNullableType } from 'typescript';
 
 function App() {
   // State Declarations
@@ -12,7 +11,7 @@ function App() {
   const cartPopupRef = useRef<HTMLDivElement>(null);
 
   // DOM Handler Functions
-  function showCart(e: SyntheticEvent) {
+  function showCart() {
     const cartPopup = cartPopupRef.current;
     // Show Element if clicked button, and not already visible
     if (cartPopup!.style.display == 'none') {

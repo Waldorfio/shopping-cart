@@ -1,5 +1,3 @@
-import { stringify } from "querystring";
-
 interface Props {
   title: string,
   price: string,
