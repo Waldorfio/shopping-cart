@@ -1,7 +1,6 @@
 import './styles/style.css';
 import {Link, Outlet} from 'react-router-dom'
 import React, { SyntheticEvent, useState, useRef } from 'react';
-import { JSDocNullableType } from 'typescript';
 
 function App() {
   // State Declarations
