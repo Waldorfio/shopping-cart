@@ -39,3 +39,8 @@ OR
 - Add a backend to allow for user login, account management, and dummy checkout
 
 ## Dependencies
+- React
+- React Router
+- React Testing Library
+- Jest
+- TypeScript
