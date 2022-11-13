@@ -3,13 +3,6 @@ import {Link, Outlet} from 'react-router-dom'
 import React, { SyntheticEvent, useState, useRef } from 'react';
 import CartProducts from './components/CartProducts';
 
-// interface Cart {
-//   size: number;
-//   games: string[];
-//   prices: string[];
-//   subtotal: number,
-// }
-
 function App() {
   // State Declarations
   const [cart, setCart] = useState(

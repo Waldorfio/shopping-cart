@@ -1,20 +1,26 @@
 import React from "react";
+import {BrowserRouter as Router} from 'react-router-dom';
 import { render, screen } from "@testing-library/react";
 import "@testing-library/jest-dom";
 import App from "./App";
-import userEvent from "@testing-library/user-event";
 
-test('Test the home page', () => {
-    render(<App />);
+test('Test the landing page', () => {
+    render(
+        <Router>
+          <App />
+        </Router>,
+      )
     
     expect(screen.getByText(/Another Key Shop/i)).toBeInTheDocument();
-    expect(screen.getByText(/Home/i)).toBeInTheDocument();
-    expect(screen.getByText(/Shop/i)).toBeInTheDocument();
-    expect(screen.getByText(/About/i)).toBeInTheDocument();
 });
 
-test('Test the cart default hidden position', () => {
-    render(<App />);
+test('Test empty cart (0 items)', () => {
+    render(
+        <Router>
+          <App />
+        </Router>,
+      )
     
-    expect(screen.getByTestId('cart-popup')).toHaveStyle('none');
+    expect(screen.getByText('0 ITEMS')).toBeInTheDocument();
 });
+
