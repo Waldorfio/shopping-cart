@@ -1,6 +1,6 @@
 # Shopping Cart: an e-commerce shopping cart demo
 A fully responsive e-commerce game key shop, built using React, TypeScript and CSS.
-## [Live Link 👈](https://shopping-cart-j6efsbdma-waldorfio.vercel.app/)
+## [Live Link 👈](https://shopping-cart-blush-three.vercel.app/)
 
 ### Features
 - Browse through a fully responsive e-commerce shop
@@ -19,7 +19,7 @@ A fully responsive e-commerce game key shop, built using React, TypeScript and C
 - Use and manipulate the DOM via hooks
 
 ## How to run the app
-### 1. Click the [hosted link](https://shopping-cart-j6efsbdma-waldorfio.vercel.app/)
+### 1. Click the [hosted link](https://shopping-cart-blush-three.vercel.app/)
 
 OR
 
