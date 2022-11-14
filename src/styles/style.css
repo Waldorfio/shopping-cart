@@ -118,6 +118,11 @@ a:-webkit-any-link {    /* Removes default styling for links, and React Links */
     display: grid;
     align-items: center;
     justify-items: center;
+    /* Transitions for hover effect */
+    transition: transform 0.2s;
+}
+.shop-btn:hover {
+    transform: scale(1.12);
 }
 #shop-now {
     grid-row: 3/4;
@@ -126,11 +131,6 @@ a:-webkit-any-link {    /* Removes default styling for links, and React Links */
     width: 400px;
     height: 110px;
     color: black;
-    /* Transitions for hover effect */
-    transition: transform 0.2s;
-}
-#shop-now:hover {
-    transform: scale(1.12);
 }
 #game-samples {
     grid-row: 1/4;
