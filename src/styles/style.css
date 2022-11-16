@@ -21,6 +21,7 @@ body {
 #container {
     display: grid;
     grid-template-rows: 210px 1fr 50px;
+    height: 100vh;
 }
 
 /* HEADER */
@@ -445,7 +446,7 @@ body {
 }
 /* 1000px -> 1400px */
 @media (min-width: 1000px) and (max-width: 1400px) {
-    #header, #home-content, #footer {
+    #header, #home-content {
         font-size: 0.8em;
     }
 }
