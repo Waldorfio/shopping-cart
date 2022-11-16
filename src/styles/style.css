@@ -387,7 +387,7 @@ body {
 /* < 1000px */
 @media (max-width: 1000px) {
     #container {
-        grid-template-rows: 0.3fr 1fr 40px;
+        grid-template-rows: 20vh 1fr 5vh; /* IMPORTANT: Try to use more 'vh' parametrers */
         gap: 0;
         height: 100vh;
     }
@@ -412,6 +412,9 @@ body {
     #logo {
         text-align: center;
     }
+    #cart-size {
+        font-size: 1.6em;
+    }
     #home-content {
         grid-template-rows: 0.4fr 1fr 0.7fr;
         grid-template-columns: 1fr;
@@ -432,6 +435,12 @@ body {
     #footer {
         font-size: 1.1em;
         padding: 0;
+    }
+    /* SHOP PAGE */
+    #shop-content {
+        padding: 0;
+        padding-top: 20px;
+        padding-bottom: 20px;
     }
 }
 /* 1000px -> 1400px */
