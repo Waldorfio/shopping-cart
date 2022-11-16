@@ -84,7 +84,6 @@ body {
     color: aqua;
 }
 
-
 /* Home Page */
 #home-content {
     display: grid;
@@ -145,8 +144,6 @@ body {
     justify-self: start;
 }
 
-
-
 /* Cart Popup */
 #cart-popup-container {
     position: fixed;
@@ -178,7 +175,6 @@ body {
         opacity: 1
     }
 }
-
 
 .cart-text {
     align-self: center;
@@ -214,8 +210,6 @@ body {
     align-items: center;
 }
 
-
-
 #cart-footer {
     display: grid;
     grid-template-rows: 100px 100px;
@@ -240,7 +234,6 @@ body {
     width: 300px;
     height: 60px;
 }
-
 
 #home:hover, #shop:hover, #about:hover {
     font-size: 2.9em;
@@ -277,10 +270,6 @@ body {
     /* Transitions for hover effect */
     transition: transform 0.2s;
 }
-/* .product:hover{
-    transform: scale(1.05);
-    background-color: white;
-} */
 .product-img {
     grid-column: 1/3;
     width: 300px;
@@ -373,18 +362,6 @@ body {
 
 /* MEDIA QUERIES */
 
-/* < 450px */
-@media (max-width: 450px) {
-
-}
-/* 450px -> 767px */
-@media (min-width: 450px) and (max-width: 767px) {
-
-}
-/* 767px -> 1000px */
-@media (min-width: 767px) and (max-width: 1000px) {
-
-}
 /* < 1000px */
 @media (max-width: 1000px) {
     #container {
@@ -437,7 +414,6 @@ body {
         font-size: 1.1em;
         padding: 0;
     }
-    /* SHOP PAGE */
     #shop-content {
         padding: 0;
         padding-top: 20px;
