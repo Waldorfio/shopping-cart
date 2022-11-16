@@ -6,7 +6,10 @@ A fully responsive e-commerce game key shop, built using React, TypeScript and C
 - Browse through a fully responsive e-commerce shop
 - Add your favorite steam games to a stateful shopping cart
 
-![](screencap.png)
+![](screencap1.png)
+
+
+![](screencap2.png)
 
 ### Goals
 - Showcasing routing with react-routers through creation of a single-page application in React
