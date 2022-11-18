@@ -12,7 +12,6 @@ a:-webkit-any-link {    /* Removes default styling for links, and React Links */
     text-decoration: none;
     color: inherit;
 }
-
 /*-----------------*/
 body {background-color: #1f143d}
 
@@ -21,7 +20,6 @@ body {background-color: #1f143d}
     grid-template-rows: 210px 1fr 50px;
     height: 100vh;
 }
-
 /* HEADER */
 #header {
     display: grid;
@@ -255,24 +253,20 @@ body {background-color: #1f143d}
     background-color: #0c0020;
     border-radius: 10px;
     padding: 15px;
-    /* Transitions for hover effect */
-    transition: transform 0.2s;
+    transition: transform 0.2s; /* Transitions for hover effect */
 }
 .product-img {
     grid-column: 1/3;
     width: 300px;
     height: 400px;
     border-radius: 10px;
-    /* Transitions for hover effect */
-    transition: transform 0.2s;
+    transition: transform 0.2s; /* Transitions for hover effect */
 }
 .product-img:hover {
     transform: scale(1.08);
     opacity: 0.9;
 }
-.steam-logo {
-    width: 25%;
-}
+.steam-logo {width: 25%}
 .product-title {
     grid-column: 1/3;
     grid-row: 2/3;
@@ -353,9 +347,7 @@ body {background-color: #1f143d}
 #git:hover {transform: rotate(360deg) scale(2)}
 
 /* MEDIA QUERIES */
-
-/* < 1000px */
-@media (max-width: 1000px) {
+@media (max-width: 1000px) { /* < 1000px */
     #container {
         grid-template-rows: 20vh 1fr 5vh; /* IMPORTANT: Try to use more 'vh' parametrers */
         gap: 0;
@@ -379,12 +371,8 @@ body {background-color: #1f143d}
         margin: 5px;
         padding: 10px;
     }
-    #logo {
-        text-align: center;
-    }
-    #cart-size {
-        font-size: 1.6em;
-    }
+    #logo {text-align: center}
+    #cart-size {font-size: 1.6em}
     #home-content {
         grid-template-rows: 0.4fr 1fr 0.7fr;
         grid-template-columns: 1fr;
@@ -412,11 +400,9 @@ body {background-color: #1f143d}
         padding-bottom: 20px;
     }
 }
-/* 1000px -> 1400px */
-@media (min-width: 1000px) and (max-width: 1400px) {
+@media (min-width: 1000px) and (max-width: 1400px) { /* 1000px -> 1400px */
     #header, #home-content {font-size: 0.8em}
 }
-/* 1400px -> 1600px */
-@media (min-width: 1400px) and (max-width: 1600px) {
+@media (min-width: 1400px) and (max-width: 1600px) { /* 1400px -> 1600px */
     #header, #home-content, #footer {font-size: 0.9em}
 }
