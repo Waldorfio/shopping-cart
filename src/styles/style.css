@@ -323,16 +323,27 @@ body {
 /* ABOUT */
 #about-content {
     display: grid;
-    grid-template-rows: 0.4fr 1fr;
+    grid-template-rows: 0.5fr 1fr;
     gap: 30px;
     background-color: #1f143d;
     color: white;
     padding: 30px;
 }
 #about-links {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
     align-self: end;
     justify-self: center;
 }
+#about-links > a {
+    font-size: 5em;
+}
+#github-logo:hover {color: #171515}
+#linked-logo:hover {color: #0072b1}
+#insta-logo:hover {color: #833AB4}
+#youtube-logo:hover {color: red}
+
 #contact-info {
     font-weight: 800;
     font-size: 2em;
