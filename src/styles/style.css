@@ -14,9 +14,7 @@ a:-webkit-any-link {    /* Removes default styling for links, and React Links */
 }
 
 /*-----------------*/
-body {
-    background-color: #1f143d;
-}
+body {background-color: #1f143d}
 
 #container {
     display: grid;
@@ -123,9 +121,7 @@ body {
     /* Transitions for hover effect */
     transition: transform 0.2s;
 }
-.shop-btn:hover {
-    transform: scale(1.12);
-}
+.shop-btn:hover {transform: scale(1.12)}
 #shop-now {
     grid-row: 3/4;
     grid-column: 1/2;
@@ -175,7 +171,6 @@ body {
         opacity: 1
     }
 }
-
 .cart-text {
     align-self: center;
     align-items: center;
@@ -193,10 +188,7 @@ body {
     color: white;
     font-weight: 800;
 }
-#close-cart:hover {
-    color: #7b778f;
-}
-
+#close-cart:hover {color: #7b778f}
 #cart-content {
     color: white;
     font-weight: 900;
@@ -209,7 +201,6 @@ body {
     grid-template-columns: 1fr 80px;
     align-items: center;
 }
-
 #cart-footer {
     display: grid;
     grid-template-rows: 100px 100px;
@@ -234,16 +225,13 @@ body {
     width: 300px;
     height: 60px;
 }
-
 #home:hover, #shop:hover, #about:hover {
     font-size: 2.9em;
     color: aqua;
 }
 
 /* CONTENT */
-#content {
-    background-color:rgb(214, 245, 245);
-}
+#content {background-color:rgb(214, 245, 245)}
 
 /* SHOP */
 #shop-content {
@@ -319,7 +307,6 @@ body {
     transform: scale(1.5);
     color: #0ebf83;
 }
-
 /* ABOUT */
 #about-content {
     display: grid;
@@ -336,14 +323,11 @@ body {
     align-self: end;
     justify-self: center;
 }
-#about-links > a {
-    font-size: 5em;
-}
+#about-links > a {font-size: 5em}
 #github-logo:hover {color: #171515}
 #linked-logo:hover {color: #0072b1}
 #insta-logo:hover {color: #833AB4}
 #youtube-logo:hover {color: red}
-
 #contact-info {
     font-weight: 800;
     font-size: 2em;
@@ -351,7 +335,6 @@ body {
     justify-self: center;
     text-align: center;
 }
-
 /* FOOTER */
 #footer {
     display: grid;
@@ -367,9 +350,7 @@ body {
     width: 1.0em;
     transition: transform 1.1s;
 }
-#git:hover {
-    transform: rotate(360deg) scale(2);
-}
+#git:hover {transform: rotate(360deg) scale(2)}
 
 /* MEDIA QUERIES */
 
@@ -433,13 +414,9 @@ body {
 }
 /* 1000px -> 1400px */
 @media (min-width: 1000px) and (max-width: 1400px) {
-    #header, #home-content {
-        font-size: 0.8em;
-    }
+    #header, #home-content {font-size: 0.8em}
 }
 /* 1400px -> 1600px */
 @media (min-width: 1400px) and (max-width: 1600px) {
-    #header, #home-content, #footer {
-        font-size: 0.9em;
-    }
+    #header, #home-content, #footer {font-size: 0.9em}
 }
