@@ -54,6 +54,7 @@ body {background-color: #1f143d}
     transition-duration: 0.2s;
     align-self: center;
     justify-self: center;
+    cursor: pointer;
 }
 #cart-container {
     display: grid;
@@ -185,6 +186,7 @@ body {background-color: #1f143d}
     justify-self: center;
     color: white;
     font-weight: 800;
+    cursor: pointer;
 }
 #close-cart:hover {color: #7b778f}
 #cart-content {
@@ -222,6 +224,7 @@ body {background-color: #1f143d}
     font-weight: 600;
     width: 300px;
     height: 60px;
+    cursor: pointer;
 }
 #home:hover, #shop:hover, #about:hover {
     font-size: 2.9em;
@@ -289,6 +292,7 @@ body {background-color: #1f143d}
     text-decoration: line-through;
 }
 .product > .material-symbols-outlined {
+    cursor: pointer;
     grid-column: 2/3;
     grid-row: 3/5;
     justify-self: end;
@@ -311,6 +315,7 @@ body {background-color: #1f143d}
     padding: 30px;
 }
 #about-links {
+    cursor: pointer;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 20px;
@@ -341,6 +346,7 @@ body {background-color: #1f143d}
     align-content: center;
 }
 #git {
+    cursor: pointer;
     width: 1.0em;
     transition: transform 1.1s;
 }
