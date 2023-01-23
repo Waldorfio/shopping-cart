@@ -1,51 +1,37 @@
-# Shopping Cart: an e-commerce shopping cart demo
+# Shopping Cart SPA
 A fully responsive e-commerce game key shop, built using React, TypeScript and CSS.
 ## [Live Link 👈](https://shopping-cart-1yg.pages.dev/)
 
 ### Features
-- Browse through a fully responsive e-commerce shop
-- Add your favorite steam games to a stateful shopping cart
+- Fully responsive design for optimal user experience on all devices
+- Users can view their cart and add steam games to a stateful shopping cart
 
-![](screencap1.png)
+![](screencap1.png)  
 
 
-![](screencap2.png)
+![](screencap2.png)  
 
-### Goals
-- Showcasing routing with react-routers through creation of a single-page application in React
-- Practice implementing TypeScript with React
-- Further refine CSS skills
+#### Goals
+- Create a fully-responsive, front-end focused e-commerce application that provides a seamless user experience
+- Allow users to easily browse and add products to the cart
+- Provide users with the ability to view their cart seamlessly
 
-### Challenges Faced
-- Passing state through Outlet routes in Typescript
-- Managing strict types via TypeScript
+#### Challenges Faced
+- Creating a fully-responsive design that works well on all devices was a challenge as we had to ensure that the layout and functionality are consistent across different screen sizes and resolutions.
+- State management in React, via Outlet routes in Typescript
+- Managing strict typing via TypeScript
 - Use and manipulate the DOM via hooks
 
-## How to run the app
-### 1. Click the [hosted link](https://shopping-cart-1yg.pages.dev/)
+## Local Installation
+1.	Clone the repository `git clone https://github.com/Waldorfio/shopping-cart.git`
+2.	Install the dependencies `npm install`
+3.	Start the web server using `npm start`
+4.	Open the application in your browser at `http://localhost:3000`
 
-OR
+## Technologies Used
+- React with TypesScript for the front-end
+- CSS for styling
+- Webpack for building and bundling the application
 
-### 2. Host it locally
-1.	Either fork or download the app and open the folder in the cli
-2.	Install all dependencies using the `npm i` command
-3.	Start the web server using the `npm run local` command. The app will be served at http://localhost:8080/
-4.	Go to  http://localhost:8080/ in your browser, and start the app!
-
-## How to use the app
-1. Navigate to the store page
-2. Add products to your cart!
-3. ...and thats it! This app is just a demo to showcase routing with React (no backend implemented).
-
-## Future Features
-- Refactor 'any' type asssertion in Products.tsx
-- Fix failed tests
-- Fix forbidden non-null assertions
-- Add a backend to allow for user login, account management, and dummy checkout
-
-## Dependencies
-- React
-- React Router
-- React Testing Library
-- Jest
-- TypeScript
+## Disclaimer
+This is a fictional application and not affiliated with the website cdkeys.com
