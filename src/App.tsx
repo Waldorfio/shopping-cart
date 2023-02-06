@@ -1,4 +1,5 @@
 import './styles/style.css';
+import './styles/media.css';
 import {Link, Outlet} from 'react-router-dom'
 import React, { SyntheticEvent, useState, useRef } from 'react';
 import CartProducts from './components/CartProducts';
