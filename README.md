@@ -6,10 +6,7 @@ A fully responsive e-commerce game key shop, built using React, TypeScript and C
 - Fully responsive design for optimal user experience on all devices
 - Users can view their cart and add steam games to a stateful shopping cart
 
-![](screencap1.png)  
-
-
-![](screencap2.png)  
+![](animation3.gif)  
 
 #### Goals
 - Create a fully-responsive, front-end focused e-commerce application that provides a seamless user experience
